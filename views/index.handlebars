@@ -1,0 +1,35 @@
+<h1>Index</h1>
+
+{{!-- <h2>{{ fruits }}</h2> --}}
+
+
+{{!-- {{#each fruits}}
+  <p>Name: {{ this }}</p>
+{{/each}} --}}
+
+{{!-- {{#each people}}
+  <div class="person">
+    <p>Name: {{ name }}</p>
+    <p>Age: {{ age }}</p>
+  </div>
+{{/each}}
+
+<form action="/people" method="post">
+  <input type="text" placeholder="Name" name="name">
+  <input type="text" placeholder="Age" name="age">
+  <button>Submit</button>
+</form> --}}
+
+{{#each notes}}
+  <div class="note">
+    <h2>Title: {{ title }}</h2>
+    <p>Details: {{ details }}</p>
+  </div>
+{{/each}} 
+
+
+<form action="/notes" method="post">
+  <input type="text" placeholder="Title" name="title">
+  <input type="text" placeholder="Details" name="details">
+  <button>Submit</button>
+</form>
